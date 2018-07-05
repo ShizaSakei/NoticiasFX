@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controlador.VerNoticiaVistaController">
+   <children>
+      <Label fx:id="tituloLabel" layoutX="14.0" layoutY="14.0" text="Titulo de la Noticia" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <HBox layoutX="25.0" layoutY="51.0" spacing="10.0">
+         <children>
+            <Label fx:id="tipoLabel" layoutX="25.0" layoutY="51.0" text="Tipo de Noticia" textFill="#656565" />
+            <Label text="•" />
+            <Label fx:id="fechaLabel" layoutX="122.0" layoutY="51.0" text="Fecha de la noticia" textFill="#656565" AnchorPane.leftAnchor="122.0" />
+         </children>
+      </HBox>
+      <VBox layoutX="25.0" layoutY="80.0" spacing="10.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <children>
+            <Label fx:id="contenidoLabel" layoutX="25.0" layoutY="80.0" text="Contenido de la Noticia" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox layoutX="25.0" layoutY="111.0" spacing="10.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="111.0" text="Publicado Por:" textFill="#656565" AnchorPane.leftAnchor="25.0" />
+                  <Label fx:id="administradorLabel" layoutX="107.0" layoutY="111.0" text="Administrador" textFill="#656565" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
